@@ -1,0 +1,18 @@
+#This is the global parameter setting file
+
+# For data downloader
+INTERVAL = 60*60
+TRAINING_DAYS = 90
+DATA_NUM = 60*60*24*TRAINING_DAYS/INTERVAL
+DATA_BATCH_SIZE = 300
+SLEEP_TIME = 0.8
+
+# For nn
+TIME_WINDOW = 200
+NUM_WORKERS = 8
+BATCH_SIZE = 8
+NB_EPOCH = 50
+LR = 0.01
+PATIENCE_MAX = 5
+FEATURE_NUM = 5
+BIODIRECT = False
