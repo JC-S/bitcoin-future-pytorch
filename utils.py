@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 
 use_cuda = torch.cuda.is_available()
+torch.backends.cudnn.benchmark = True
 
 def load_data(target, sequence_length, start=0, shuffle=True):
     #Read the data file
